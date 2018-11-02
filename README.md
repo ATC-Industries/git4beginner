@@ -104,4 +104,5 @@ Now you can make changes all you want to that and we can later merger that branc
 ## Pull Request
 
 Go to gitHub and do a pull request.
-TODO writeup pullrequest instructions
+
+Select the two branches and follow the on screen info.  It's pretty easy.
