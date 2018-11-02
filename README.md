@@ -78,3 +78,25 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.```
 So now you will want to do a `git pull` and one of two things will happen.  If the changes to the master are in different lines then the changes you are trying to push, the system will auto merge.  however.  If the changes are on the same lines you will need to select A, B or neither and then `git add .` `git commit` and `git push` again.
 
 To manage merge conflicts I recommend using a text editor like atom as it has built in tools to assist you.
+
+## Branching
+
+The other alternative to managing merge conflicts locally is to NOT work on the master branch and instead work on a special branch and then later merge that branch to the master using the built in tools on gitHub.
+
+* ```$ git branch```
+Lists all local branches in the current repository
+* ```$ git branch [branch-name]```
+Creates a new branch
+* ```$ git checkout [branch-name]```
+Switches to the specified branch and updates the working directory
+* ```$ git merge [branch]```
+Combines the specified branch’s history into the current branch
+* ```$ git branch -d [branch-name]```
+Deletes the specified branch
+
+#### So create your Branch
+`git branch adamsTestBranch`
+#### Then "checkout" that branch
+`git checkout adamsTestBranch`
+
+Now you can make changes all you want to that and we can later merger that branch into the master on GitHub and use the Github merge conflict tools.
