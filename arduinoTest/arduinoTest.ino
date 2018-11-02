@@ -4,4 +4,4 @@ just to see how pushes to the master branch are handeled
 
 this is a new line
 
-We're making more changes
+We're making more money
