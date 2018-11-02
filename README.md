@@ -100,3 +100,8 @@ Deletes the specified branch
 `git checkout adamsTestBranch`
 
 Now you can make changes all you want to that and we can later merger that branch into the master on GitHub and use the Github merge conflict tools.
+
+## Pull Request
+
+Go to gitHub and do a pull request.
+TODO writeup pullrequest instructions
