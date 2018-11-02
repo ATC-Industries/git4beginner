@@ -59,4 +59,6 @@ Use an imperative tone to describe what a commit does, rather than what it did. 
 
 ## Push
 Finally when you are ready to send all your changes to git hub you simply type:
-`git push`
+`git push` This is not a test
+
+This will push the files to gitHub and we will deal with Merges and conflicts later.
