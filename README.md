@@ -59,4 +59,22 @@ Use an imperative tone to describe what a commit does, rather than what it did. 
 
 ## Push
 Finally when you are ready to send all your changes to git hub you simply type:
-`git push
+`git push`
+
+Okay now, if no one has messed with the master branch since the last time you pulled then you should be able to `push` without any problems.
+
+If however someone else has already made changes to the master you will be prompted to do a `git pull` to align the files.
+```
+$ git push
+To https://github.com/ATC-Industries/git4beginner.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ATC-Industries/git4beginner.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.```
+
+So now you will want to do a `git pull` and one of two things will happen.  If the changes to the master are in different lines then the changes you are trying to push, the system will auto merge.  however.  If the changes are on the same lines you will need to select A, B or neither and then `git add .` `git commit` and `git push` again.
+
+To manage merge conflicts I recommend using a text editor like atom as it has built in tools to assist you.
