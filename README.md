@@ -73,7 +73,8 @@ hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
 hint: (e.g., 'git pull ...') before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.```
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
 
 So now you will want to do a `git pull` and one of two things will happen.  If the changes to the master are in different lines then the changes you are trying to push, the system will auto merge.  however.  If the changes are on the same lines you will need to select A, B or neither and then `git add .` `git commit` and `git push` again.
 
